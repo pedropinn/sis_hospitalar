@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Cadastro {
 
-    Scanner sc = new Scanner(System.in); Paciente p1 = new Paciente(); Medico m1 = new Medico(); Remedio r1 = new Remedio(); Consulta c1 = new Consulta();
+    Scanner sc = new Scanner(System.in); Paciente p1 = new Paciente(); Medico m1 = new Medico(); Remedio r1 = new Remedio(); Consulta c1 = new Consulta(); Func f1 = new Func();
 
     public void cadastroPaciente() {
         System.out.println("Digite o nome do Paciente:"); p1.setNome(sc.nextLine());
@@ -27,6 +27,13 @@ public class Cadastro {
         System.out.println("Digite o codigo de barras:"); r1.setCodigo(Integer.parseInt(sc.nextLine()));
         System.out.println("Digite a descrição:"); r1.setDescricao(sc.nextLine());
     }
+    public void cadastroFunc() {
+        System.out.println("Digite o nome do Funcionário:"); f1.setNome(sc.nextLine());
+        System.out.println("Digite o indentificação local:"); f1.setIden(Integer.parseInt(sc.nextLine()));
+        System.out.println("Digite o Cargo:"); f1.setCargo(sc.nextLine());
+    }
+
+    public void imprimirFunc() { f1.imprimeDados(); System.out.print("\n");}
 
     public void imprimirRemedio() { r1.imprimeDados(); System.out.print("\n");}
 
