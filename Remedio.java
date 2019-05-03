@@ -14,7 +14,7 @@ public class Remedio {
 
     public void setCodigo(int codigo) {
         if (codigo > 0) {this.codigo = codigo;}
-        else {System.out.println("Codigo.");}
+        else {System.out.println("Código inválido.");}
     }
 
     public String getDescricao() {return descricao;}
