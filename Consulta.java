@@ -3,7 +3,7 @@ public class Consulta {
     private String dia;
     private String hora;
 
-    public Consulta(String dia, int idade) {
+    public Consulta(String dia, String hora) {
         this.dia = dia;
         this.hora = hora;
     }

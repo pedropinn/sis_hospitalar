@@ -10,8 +10,7 @@ public class Remedio {
         this.descricao = descricao;
     }
 
-    public Remedio() {
-    }
+    public Remedio() {}
 
     public String getNome() {
         return nome;
@@ -47,4 +46,3 @@ public class Remedio {
     }
 
 }
-
