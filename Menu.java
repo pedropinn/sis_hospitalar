@@ -1,7 +1,5 @@
 import java.util.Scanner;
-
 public class Menu {
-
 private int numeroMenu = 0;
 
     public void txtMenu() { 
@@ -16,16 +14,10 @@ private int numeroMenu = 0;
        System.out.println(numeroMenu +" - Cadastro Funcionário"); numeroMenu += 1;
        System.out.println(numeroMenu +" - Agendar Consulta"); numeroMenu += 1;
        System.out.println(numeroMenu +" - Imprimir Consulta"); numeroMenu += 1;
-       System.out.println(numeroMenu +" - Sair \n"); numeroMenu = 0;
-    } 
+       System.out.println(numeroMenu +" - Sair\n"); numeroMenu = 0;} 
                
-
-    
-    public void txtErro(){ 
-      System.out.println("Opção inválida");
-        }  
-    
-    
+    public void txtErro(){ System.out.println("Opção inválida");}  
+        
  public void menu(){
      int opcaoMenu;
     Cadastro c1 = new Cadastro();
@@ -63,7 +55,4 @@ private int numeroMenu = 0;
                 default:
                     txtErro();break;
             }
-        } while (opcaoMenu != 0);
-
-} 
-} 
+        } while (opcaoMenu != 0);} } 
