@@ -40,7 +40,6 @@ public class Menu {
        do {
             txtMenu();
             opcaoMenu = sc.nextInt();
-
             System.out.print("\n");
             switch (opcaoMenu) {
 
