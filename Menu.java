@@ -4,29 +4,29 @@ public class Menu {
 
     public void txtMenu() {
         System.out.println("Digite a opçcão");
-        numeroMenu += 1;
+        ++numeroMenu;
         System.out.println(numeroMenu + " - Exibir Médico");
-        numeroMenu += 1;
+        ++numeroMenu;
         System.out.println(numeroMenu + " - Cadastro Médico");
-        numeroMenu += 1;
+        ++numeroMenu;
         System.out.println(numeroMenu + " - Exibir Paciente");
-        numeroMenu += 1;
+        ++numeroMenu;
         System.out.println(numeroMenu + " - Cadastro Paciente");
-        numeroMenu += 1;
+        ++numeroMenu;
         System.out.println(numeroMenu + " - Exibir Remédio");
-        numeroMenu += 1;
+        ++numeroMenu;
         System.out.println(numeroMenu + " - Cadastro Paciente");
-        numeroMenu += 1;
+        ++numeroMenu;
         System.out.println(numeroMenu + " - Exibir Funcionário");
-        numeroMenu += 1;
+        ++numeroMenu;
         System.out.println(numeroMenu + " - Cadastro Funcionário");
-        numeroMenu += 1;
+        ++numeroMenu;
         System.out.println(numeroMenu + " - Agendar Consulta");
-        numeroMenu += 1;
+        ++numeroMenu;
         System.out.println(numeroMenu + " - Imprimir Consulta");
-        numeroMenu += 1;
+        ++numeroMenu;
         System.out.println(numeroMenu + " - Sair\n");
-        numeroMenu = 0;
+        ++numeroMenu;
     }
 
     public void txtErro() {
@@ -37,7 +37,7 @@ public class Menu {
         int opcaoMenu;
         Cadastro c1 = new Cadastro();
         Scanner sc = new Scanner(System.in);
-       do {
+        do {
             txtMenu();
             opcaoMenu = sc.nextInt();
             System.out.print("\n");
